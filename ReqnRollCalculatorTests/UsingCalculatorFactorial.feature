@@ -1,0 +1,22 @@
+Feature: UsingCalculatorFactorial
+    In order to calculate factorials
+    As a math student
+    I want to be told the factorial of a number using a calculator
+    
+@Factorial
+Scenario: Calculate factorial of a positive number
+    Given I have a calculator
+    When I have entered 5 into the calculator and press factorial
+    Then the factorial result should be 120
+    
+@Factorial
+Scenario: Calculate factorial of zero
+    Given I have a calculator
+    When I have entered 0 into the calculator and press factorial
+    Then the factorial result should be 1
+    
+@Factorial
+Scenario: Calculate factorial of one
+    Given I have a calculator
+    When I have entered 1 into the calculator and press factorial
+    Then the factorial result should be 1
