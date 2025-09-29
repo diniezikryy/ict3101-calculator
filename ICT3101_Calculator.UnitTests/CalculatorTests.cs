@@ -196,4 +196,38 @@ public class CalculatorTests
         // Assert
         Assert.That(() => _calculator.UnknownFunctionB(4,5), Throws.ArgumentException);
     }
+    
+    // GenMagicNum tests
+    // [Test]
+    // public void GenMagicNum_WithValidInput_ReturnsDoubledValue()
+    // {
+    //     // Now we pass in a real FileReader
+    //     FileReader fileReader = new FileReader();
+    //     double result = _calculator.GenMagicNum(0, fileReader);
+    //     Assert.That(result, Is.EqualTo(84));
+    // }
+    //
+    // [Test]
+    // public void GenMagicNum_WithSecondIndex_ReturnsCorrectValue()
+    // {
+    //     FileReader fileReader = new FileReader();
+    //     double result = _calculator.GenMagicNum(1, fileReader);
+    //     Assert.That(result, Is.EqualTo(200));
+    // }
+    //
+    // [Test]
+    // public void GenMagicNum_WithNegativeNumberInFile_ReturnsPositiveDoubled()
+    // {
+    //     FileReader fileReader = new FileReader();
+    //     double result = _calculator.GenMagicNum(3, fileReader);
+    //     Assert.That(result, Is.EqualTo(30));
+    // }
+    //
+    // [Test]
+    // public void GenMagicNum_WithOutOfBoundsIndex_ReturnsZero()
+    // {
+    //     FileReader fileReader = new FileReader();
+    //     double result = _calculator.GenMagicNum(10, fileReader);
+    //     Assert.That(result, Is.EqualTo(0));
+    // }
 }

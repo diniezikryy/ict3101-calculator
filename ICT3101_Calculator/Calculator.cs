@@ -230,4 +230,22 @@ public class Calculator
         double product = initialFailureIntensity * theta * executionTime;
         return (1.0 / theta) * Math.Log(product + 1);
     }
+    
+    // Generate a magic number
+    public double GenMagicNum(double input, IFileReader fileReader)
+    {
+        double result = 0;
+        int choice = Convert.ToInt16(input);
+        
+        // dep injection, receive the file reader obj as a param instead
+        string[] magicStrings = fileReader.Read("/Users/diniezikry/RiderProjects/ICT3101_Calculator/ICT3101_Calculator/MagicNumbers.txt");
+        
+        if ((choice >= 0) && (choice < magicStrings.Length))
+        {
+            result = Convert.ToDouble(magicStrings[choice]);
+        }
+
+        result = (result > 0) ? (2 * result) : (-2 * result);
+        return result;
+    }
 }
