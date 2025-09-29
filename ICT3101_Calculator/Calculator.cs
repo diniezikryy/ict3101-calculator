@@ -64,6 +64,8 @@ public class Calculator
             return 11;
         if (num1 == 11 && num2 == 11)
             return 15;
+        
+        Console.WriteLine($"Adding {num1} + {num2}");
     
         // Normal addition for all other cases
         return (num1 + num2);
